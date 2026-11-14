@@ -1,4 +1,4 @@
-var __HS_PLUGIN__ = (() => {
+(() => {
   var __create = Object.create;
   var __defProp = Object.defineProperty;
   var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -11,10 +11,6 @@ var __HS_PLUGIN__ = (() => {
     if (typeof require !== "undefined") return require.apply(this, arguments);
     throw Error('Dynamic require of "' + x + '" is not supported');
   });
-  var __export = (target, all) => {
-    for (var name in all)
-      __defProp(target, name, { get: all[name], enumerable: true });
-  };
   var __copyProps = (to, from, except, desc) => {
     if (from && typeof from === "object" || typeof from === "function") {
       for (let key of __getOwnPropNames(from))
@@ -31,13 +27,8 @@ var __HS_PLUGIN__ = (() => {
     isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
     mod
   ));
-  var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
   // src/index.tsx
-  var index_exports = {};
-  __export(index_exports, {
-    default: () => WebFrame
-  });
   var import_react = __toESM(__require("react"));
   function WebFrame({
     config
@@ -158,5 +149,4 @@ var __HS_PLUGIN__ = (() => {
   window.__HS_PLUGIN__ = {
     default: WebFrame
   };
-  return __toCommonJS(index_exports);
 })();

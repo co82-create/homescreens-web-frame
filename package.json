@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "esbuild src/index.tsx --bundle --format=iife --global-name=__HS_PLUGIN__ --external:react --external:react-dom --outfile=dist/bundle.js"
+    "build": "esbuild src/index.tsx --bundle --format=iife --external:react --external:react-dom --outfile=dist/bundle.js"
   },
   "devDependencies": {
     "esbuild": "^0.25.0",
