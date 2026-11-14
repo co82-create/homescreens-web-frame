@@ -1,0 +1,57 @@
+{
+  "id": "web-frame",
+  "name": "Web Frame",
+  "version": "1.0.0",
+  "description": "Configurable iframe module for displaying websites.",
+  "author": "Custom",
+  "license": "MIT",
+  "minAppVersion": "1.0.0",
+  "moduleType": "web-frame",
+  "category": "Media & Display",
+  "icon": "globe",
+  "defaultConfig": {
+    "url": "https://example.com",
+    "refreshInterval": 0,
+    "showBorder": false,
+    "backgroundColor": "#111827"
+  },
+  "defaultSize": {
+    "w": 600,
+    "h": 400
+  },
+  "defaultStyle": {
+    "padding": 0
+  },
+  "exports": {
+    "component": "default"
+  },
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "url": {
+        "type": "string",
+        "title": "Website URL",
+        "ui:widget": "text",
+        "ui:placeholder": "https://example.com"
+      },
+      "refreshInterval": {
+        "type": "number",
+        "title": "Auto refresh (seconds)",
+        "minimum": 0,
+        "maximum": 3600,
+        "ui:widget": "number"
+      },
+      "showBorder": {
+        "type": "boolean",
+        "title": "Show border",
+        "ui:widget": "toggle"
+      },
+      "backgroundColor": {
+        "type": "string",
+        "title": "Background color",
+        "ui:widget": "color"
+      }
+    }
+  },
+  "permissions": []
+}
