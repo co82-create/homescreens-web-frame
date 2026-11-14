@@ -20,8 +20,7 @@ export default defineConfig({
       external: [],
       output: {
         globals: {},
-        exports: 'named',
-        footer: 'window.__HS_PLUGIN__ = WebFrameBundle;',
+        exports: 'named' 
       },
     },
   },
