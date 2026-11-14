@@ -149,3 +149,6 @@ export default function WebFrame({
   );
 }
 
+(window as any).__HS_PLUGIN__ = {
+  default: WebFrame
+};

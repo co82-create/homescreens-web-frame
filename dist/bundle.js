@@ -155,5 +155,8 @@ var __HS_PLUGIN__ = (() => {
       )
     );
   }
+  window.__HS_PLUGIN__ = {
+    default: WebFrame
+  };
   return __toCommonJS(index_exports);
 })();
