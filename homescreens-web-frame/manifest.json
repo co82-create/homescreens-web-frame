@@ -1,7 +1,7 @@
 {
   "id": "web-frame",
   "name": "Web Frame",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Configurable iframe module for displaying websites.",
   "author": "Custom",
   "license": "MIT",

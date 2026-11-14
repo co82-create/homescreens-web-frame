@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "esbuild src/index.tsx --bundle --format=iife --external:react --external:react-dom --outfile=dist/bundle.js"
+    "build": "vite build"
   },
   "devDependencies": {
     "esbuild": "^0.25.0",
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "vite": "^6.4.6"
   },
   "peerDependencies": {
     "react": "*",
